@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: tomato;
+      padding: 15px;
+      margin-bottom: 50px;
+    }
+    #navbar > a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+      width: 90%;
+      margin: auto;
+      border: 2px solid red;
+    }
+
+    #container > div {
+      /*      add border here */
+
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div id="navbar">
+      <a href="index.html">HOME</a>
+      <a href="cart.html">CARD</a>
+    </div>
+    <div id="container"></div>
+  </body>
+</html>
+ <script src="cart.js"></script>
